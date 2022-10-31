@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
         counter.setScaleX(0f);
         counter.setScaleY(0f);
         counter.setImageResource(R.drawable.yellow);
-        counter.animate().scaleX(1f).scaleY(1f).setDuration(200);
+        counter.animate().scaleX(1f).scaleY(1f).setDuration(300);
     }
 
     @Override
