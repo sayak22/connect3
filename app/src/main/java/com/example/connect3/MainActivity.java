@@ -44,11 +44,9 @@ public class MainActivity extends AppCompatActivity {
                 //somebody has won
                 //game is not active anymore
                 gameActive = false;
-                String winner;
-                if (activePlayer == 0)
+                String winner="Red";
+                if (activePlayer == 1)
                     winner = "Yellow";
-                else
-                    winner = "Red";
                 TextView winnerMessage = (TextView) findViewById(R.id.result);
                 winnerMessage.setText(winner + " has won!!");
                 LinearLayout linearLayout = (LinearLayout) findViewById(R.id.winningMessage);
