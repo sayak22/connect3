@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="#2b2b2b"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+android:layout_margin="20dp"
+            android:text="Connect_3"
+            android:textColor="#858573"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/instruction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:textColor="#727262"
+            android:gravity="center"
+            android:text="This game is just like tic tac toe"/>
+
+        <GridLayout
+            android:id="@+id/board"
+            android:layout_marginTop="50dp"
+            android:layout_width="360dp"
+            android:layout_height="360dp"
+            android:columnCount="3"
+            android:rowCount="3"
+            android:background="@drawable/board">
+
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_marginLeft="10dp"
+                app:srcCompat="@drawable/red" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_marginLeft="22dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_row="0"
+                android:layout_column="1"
+                app:srcCompat="@drawable/red" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="22dp"
+                android:layout_row="0"
+                android:layout_column="2"
+                app:srcCompat="@drawable/red" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="30dp"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:layout_marginLeft="10dp"
+                app:srcCompat="@drawable/red" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_marginLeft="22dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="30dp"
+                android:layout_row="1"
+                android:layout_column="1"
+                app:srcCompat="@drawable/red" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="22dp"
+                android:layout_row="1"
+                android:layout_column="2"
+                app:srcCompat="@drawable/red" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="30dp"
+                android:layout_row="2"
+                android:layout_column="0"
+                android:layout_marginLeft="10dp"
+                app:srcCompat="@drawable/red" />
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_marginLeft="22dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="30dp"
+                android:layout_row="2"
+                android:layout_column="1"
+                app:srcCompat="@drawable/red" />
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="22dp"
+                android:layout_row="2"
+                android:layout_column="2"
+                app:srcCompat="@drawable/red" />
+        </GridLayout>
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
